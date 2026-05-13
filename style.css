@@ -59,13 +59,16 @@ body {
 /*---Hero Section---*/
 
 .hero-section {
-  background: url(black and white smoke.jpg);
+  background: url(/images/black\ and\ white\ smoke.jpg);
   background-repeat: no-repeat;
   background-position: start;
   background-size: cover;
   background-attachment: fixed;
   /* background-color: #111; */
   padding: 70px 30px 50px;
+  display: flex;
+  align-items: center;
+
 }
 
 .title {
@@ -301,6 +304,10 @@ body {
 
 .tools-header {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ text-align: center;
   padding-bottom: 30px;
 }
 
@@ -314,7 +321,7 @@ body {
   width: 70%;
 }
 .tools-title {
-  width: 70%;
+  width: 80%;
   font-size: 50px;
   font-family: var(--header-font);
   color: white;
@@ -472,7 +479,7 @@ body {
 }
 
 .card-content {
-  background-image: url(download (2).jpg);
+  background-image: url(./images/download\ \(2\).jpg);
   background-position: center;
   height: 220px;
   padding: 10px;
@@ -767,16 +774,27 @@ body {
   align-items: start;
   gap: 10px;
   background-color: var(--white);
-  padding: 20px 0px 20px 20px;
+  padding: 20px;
   border-radius: 10px;
 }
 
 .rowcount-img{
   width: 30%;
+  height: 100%;
+
+}
+
+.rowcount-img{
+    display: flex;
+    align-items: center;
+}
+
+.grid-details{
+  width: 70%;
 }
 
 .grid-icon {
-  width: 130px;
+  width: 100%;
   height: 100px;
 }
 
@@ -941,14 +959,16 @@ body {
   border: 1px solid white;
   color: white;
   border-radius: 20px;
+  cursor: pointer;
 }
 .plan-card:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
 .plan-card-btn:hover {
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(112, 112, 112);
   transition: 0.2s;
+  color: black;
 }
 
 /* Pricing plan section end */
@@ -957,9 +977,7 @@ body {
 .gold-card-section {
   padding: 40px 70px;
 }
-.gold-card-main {
-  padding: 20px;
-}
+
 .gold-card-row {
   display: flex;
   border: 1px solid gold;
@@ -1105,6 +1123,7 @@ body {
   border: 1px solid var(--light-gray);
   border-radius: 20px;
   color: white;
+  flex: 1;
 }
 .review h1 {
   font-size: 18px;
@@ -1279,23 +1298,28 @@ border-radius: 20px 0px 0px 20px;
   border: 1px solid gray;
   font-size: 16px;
   width: max-content;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   cursor: pointer;
   transition: 
     background-color 0.3s ease,
     color 0.3s ease,
     transform 0.3s ease,
     box-shadow 0.3s ease;
-
+  color: white;
 
 }
 
 .free:hover{
-  color: white;
+  color: rgb(0, 0, 0);
   background-color: var(--lavender);
-
+  border: none;
   transform: translateY(-3px);
 
+
+}
+
+.free-icon img:hover{
+    filter: invert(1);
 
 }
 
@@ -1473,8 +1497,6 @@ ul li {
 }
 
 
-
-
 .atpresent{
   display: flex;
   align-items: center;
@@ -1490,12 +1512,11 @@ ul li {
 
 
 
-
 @media (max-width:1030px)
 {
 
   .hero-section{
-    padding: 100px 30px 80px;
+    padding: 64px 30px 34px;
   }
 
   .geo,.leave{
@@ -1812,10 +1833,10 @@ flex-direction: column;
 
   .getstart-img img {
         width: 100%;
-        height: 350px;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
 
@@ -1876,11 +1897,32 @@ flex-direction: column;
 }
 
 
+  .get-start{
+    padding: 20px;
+
+  }
+
+.getstart-box{
+  padding: 10px 0px 0px;
+}
+
+.free{
+  font-size: 13px;
+}
+
+.free-icon{
+  width: 15px;
+  height: 15px;
+}
 
   .tools-section,
-  .FAQ-section,
-  .get-start {
+  .FAQ-section
+ {
     padding: 40px 20px;
+  }
+
+  .testimonal{
+    padding: 40px 0px !important;
   }
 
   .faq-container {
@@ -1892,6 +1934,9 @@ flex-direction: column;
   }
 
 
+.grid-details{
+  width: 100%;
+}
 
   .tools-title {
     font-size: 25px;
@@ -2013,7 +2058,7 @@ flex-direction: column;
 
     .founder-card-main {
         width: 100%;
-        top: -85% !important ;
+        top: -110% !important ;
     }
 /* 
     .footer1{
@@ -2022,13 +2067,17 @@ flex-direction: column;
     } */
 
     .footer-content {
-      padding: 50px 15px 15px;
+      padding: 55px 15px 15px;
 }
 
 .quick ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 11px;
+}
+
+.footer-head{
+  padding: 10px;
 }
 
 .copyright-details p{
@@ -2047,26 +2096,12 @@ flex-direction: column;
   font-size: 16px;
 }
 
- /* .reviews{
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding: 10px;
-  }
-
-  .review{
-      max-width: 280px;
-      flex-shrink: 0;
-      height: 200px;
-  } */
 
 .reviews{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;   /* important */
-
+      scroll-behavior: smooth;
     gap: 20px;
 
     overflow: hidden;
@@ -2080,7 +2115,7 @@ flex-direction: column;
     flex-shrink: 0;
 
     height: 200px;
-
+    flex: none;
     animation: scrollLeft 15s linear infinite;
 }
 
@@ -2115,6 +2150,12 @@ flex-direction: column;
     width: max-content;
   }
 
+
+  .copyright-details{
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 5px;
+  }
   
 
 }
@@ -2171,7 +2212,7 @@ flex-direction: column;
 
     .founder-card-main {
         width: 100%;
-        top: -100% !important ;
+        top: -130% !important ;
     }
 
         .founder-img img {
