@@ -59,7 +59,7 @@ body {
 /*---Hero Section---*/
 
 .hero-section {
-  background: url(/images/black\ and\ white\ smoke.jpg);
+  background: url(https://s-ramalakshmi.github.io/atpresent/black%20and%20white%20smoke.jpg);
   background-repeat: no-repeat;
   background-position: start;
   background-size: cover;
@@ -479,7 +479,7 @@ body {
 }
 
 .card-content {
-  background-image: url(./images/download\ \(2\).jpg);
+  background-image: url(https://s-ramalakshmi.github.io/atpresent/calendar.jpg);
   background-position: center;
   height: 220px;
   padding: 10px;
