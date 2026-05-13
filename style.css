@@ -479,7 +479,7 @@ body {
 }
 
 .card-content {
-  background: url(https://s-ramalakshmi.github.io/atpresent/calendar.jpg);
+  background-image: url(https://s-ramalakshmi.github.io/atpresent/calendar.jpg);
   background-position: center;
   height: 220px;
   padding: 10px;
