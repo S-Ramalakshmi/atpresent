@@ -479,7 +479,7 @@ body {
 }
 
 .card-content {
-  background-image: url(download (2).jpg);
+  background: url(download (2).jpg);
   background-position: center;
   height: 220px;
   padding: 10px;
